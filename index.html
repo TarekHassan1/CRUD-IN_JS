@@ -3,20 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+        integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+        crossorigin="anonymous" defer referrerpolicy="no-referrer"></script>
+            <script src="script.js" defer></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <div class="modal">
+    </div>
+                <div class="addEmp">
+                    <div class="head">
+                        <h2>Add Employee</h2>
+                        <span close>X</span>
+                    </div>
+                    <div class="field name">
+                        <label for="Name">Name</label>
+                        <input type="text" employeeName name="Name" id="">
+                    </div>
+                    <div class="field email">
+                        <label for="Email">Email</label>
+                        <input type="email" employeeEmail="Email" id="">
+                    </div>
+                    <div class="field address">
+                        <label for="Adress">Adress</label>
+                        <input type="text" employeeAddress="Adress" id="">
+                    </div>
+                    <div class="field phone">
+                        <label for="Phone">Phone</label>
+                        <input type="number" employeePhone name="Phone" id="">
+                    </div>
+                    <div class="foot">
+                        <div>
+                            <span>Cancel</span>
+                            <button addEmployeeBtn> Add</button>
+                        </div>
+                    </div>
+                </div>
+
     <header>
         <div class="container">
             <h1>Manage Employees</h1>
             <div>
-                <button>- Delete</button>     
-                <button>+ Add New Empolyee</button>     
+                <button deleteGlobal>- Delete</button>     
+                <button addNewEmp>+ Add New Empolyee</button>     
             </div>
         </div>
     </header>
-    <section>
+    <section class="employees">
         <div class="category">
             <input type="checkbox">
             <h3>Name</h3>
@@ -25,43 +61,8 @@
             <h3>Phone</h3>
             <h3>Actions</h3>
         </div>
-        <div class="employee">
-           <input type="checkbox">
-            <p>Name</p>
-            <p>Name</p>
-            <p>Name</p>
-            <p>Name</p>
-            <p><button>Edit</button> <button>Delete</button></p>
-        </div>
-    </section>
-    <div class="addEmp">
-        <div class="head">
-            <h2>Add Employee</h2>
-            <span>X</span>
-        </div>
-        <div class="field">
-            <label for="">Name</label>
-            <input type="text" name="" id="">
-        </div>
-        <div class="field">
-            <label for="">Eamil</label>
-            <input type="text" name="" id="">
-        </div>
-        <div class="field">
-            <label for="">Adress</label>
-            <input type="text" name="" id="">
-        </div>
-        <div class="field">
-            <label for="">Phone</label>
-            <input type="text" name="" id="">
-        </div>
-        <div class="foot">
-            <div>
-                <span>Cancel</span>
-                <button>Add</button>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+            </section>
+
+   
 </body>
 </html>
